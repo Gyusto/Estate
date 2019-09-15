@@ -8,5 +8,5 @@ import yusto.programer.estate.home.Land;
 public interface BtnactionListiner {
     void onHouseClick(Houses house, ImageView thumbNails);
 
-    void onLandClick(Land land);
+    void onLandClick(Land land,ImageView thumbNails);
 }

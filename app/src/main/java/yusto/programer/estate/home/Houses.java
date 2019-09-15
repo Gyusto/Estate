@@ -4,6 +4,7 @@ public class Houses {
     private String region;
     private String noOfHouses;
     private String thumbnail;
+    private String Amount;
 
     public Houses() {
     }
@@ -36,5 +37,13 @@ public class Houses {
 
     public void setThumbnail(String thumbnail) {
         this.thumbnail = thumbnail;
+    }
+
+    public String getAmount() {
+        return Amount;
+    }
+
+    public void setAmount(String amount) {
+        Amount = amount;
     }
 }

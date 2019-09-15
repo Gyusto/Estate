@@ -16,7 +16,7 @@ import yusto.programer.estate.products.fragments.viewPagerAdapter;
 
 public class productDetails extends FragmentActivity {
     private ImageView Image_cover;
-    private TextView location_title,Amount;
+    private TextView location_title,Amount,detailTitle,detailTitle2,detailTitle3;
     private TabLayout productTab;
     private ViewPager viewPager;
     @Override
@@ -33,6 +33,9 @@ public class productDetails extends FragmentActivity {
            Image_cover = findViewById(R.id.product_house_details_Image);
            location_title = findViewById(R.id.product_house_details_location);
            Amount = findViewById(R.id.product_house_details_amount);
+           detailTitle=findViewById(R.id.detailTitle);
+           detailTitle2=findViewById(R.id.detailTitle2);
+           detailTitle3=findViewById(R.id.detailTitle3);
            if(type==1) {
            Glide.with(this).load(thumbNail).fitCenter().into(Image_cover);
            location_title.setText(location);
@@ -45,7 +48,21 @@ public class productDetails extends FragmentActivity {
            productTab.setupWithViewPager(viewPager);
            productTab.setSelectedTabIndicatorHeight(0);
           }else if(type2==2){
-               Toast.makeText(getApplicationContext(),"Worked",Toast.LENGTH_LONG).show();
+               Glide.with(this).load(thumbNail).fitCenter().into(Image_cover);
+               location_title.setText(location);
+               Amount.setText(pAmount);
+               productTab=findViewById(R.id.house_list_details_tabs);
+               viewPager=findViewById(R.id.product_house_details_pager);
+               detailTitle.setText("Acres");
+               detailTitle2.setText("Distance");
+               detailTitle3.setText("");
+               viewPagerAdapter adapter=new viewPagerAdapter(getSupportFragmentManager());
+               adapter.addFragment(new product_details_Fragment(),"");
+               viewPager.setAdapter(adapter);
+               productTab.setupWithViewPager(viewPager);
+               productTab.setSelectedTabIndicatorHeight(0);
+
+              // Toast.makeText(getApplicationContext(),"Worked",Toast.LENGTH_LONG).show();
            }
 
 

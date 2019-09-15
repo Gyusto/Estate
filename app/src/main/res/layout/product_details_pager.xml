@@ -49,11 +49,11 @@
                 <!--Product details (Header)-->
                 <LinearLayout
                     android:layout_width="370dp"
-                    android:layout_height="110dp"
+                    android:layout_height="120dp"
                     android:layout_centerHorizontal="true"
                     android:background="@color/colorPrimaryDark"
                     android:alpha="0.8"
-                    android:layout_marginTop="198dp"
+                    android:layout_marginTop="170dp"
 
                     >
                     <LinearLayout
@@ -138,6 +138,7 @@
                                     android:paddingTop="2dp"
                                     />
                                 <TextView
+                                    android:id="@+id/detailTitle"
                                     android:textColor="@color/colorAccent"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -164,6 +165,7 @@
                                     android:paddingTop="2dp"
                                     />
                                 <TextView
+                                    android:id="@+id/detailTitle2"
                                     android:textColor="@color/colorAccent"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -189,6 +191,7 @@
                                     android:paddingTop="2dp"
                                     />
                                 <TextView
+                                    android:id="@+id/detailTitle3"
                                     android:textColor="@color/colorAccent"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"

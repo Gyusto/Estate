@@ -141,7 +141,8 @@ public class HomeFragment extends Fragment implements BtnactionListiner {
                         String price = product_object.getString("price");
                         String Thumbnails = product_object.getString("products_name");
                         houses.setRegion(locations);
-                        houses.setNoOfHouses("Tshs "+price);
+                        houses.setAmount("Tshs "+price);
+                        houses.setNoOfHouses(rooms);
                         houses.setThumbnail(images+Thumbnails);
 
                         houseslist.add(houses);
@@ -231,20 +232,21 @@ public class HomeFragment extends Fragment implements BtnactionListiner {
         Intent intent=new Intent(getContext(), productDetails.class);
         intent.putExtra("location",house.getRegion());
         intent.putExtra("thumbNail",house.getThumbnail());
+        intent.putExtra("amount",house.getAmount());
         intent.putExtra("type",1);
         startActivity(intent);
         //Toast.makeText(getContext(), "Worked"+house.getThumbnail(), Toast.LENGTH_SHORT).show();
     }
 
     @Override
-    public void onLandClick(Land land) {
-//        Intent intent=new Intent(getContext(), productDetails.class);
-//        intent.putExtra("location",land.getLocation());
-//        intent.putExtra("thumbNail",land.getThumbNail());
-//        intent.putExtra("amount",land.getRent_amout());
-//        intent.putExtra("type2",2);
-//        startActivity(intent);
-        Toast.makeText(getContext(),"Worked"+land.getLocation(),Toast.LENGTH_LONG).show();
+    public void onLandClick(Land land,ImageView thumbNails) {
+        Intent intent=new Intent(getContext(), productDetails.class);
+        intent.putExtra("location",land.getLocation());
+        intent.putExtra("thumbNail",land.getThumbNail());
+        intent.putExtra("amount",land.getRent_amout());
+        intent.putExtra("type2",2);
+        startActivity(intent);
+//        Toast.makeText(getContext(),"Worked"+land.getLocation(),Toast.LENGTH_LONG).show();
     }
 
     class SliderTask extends TimerTask {

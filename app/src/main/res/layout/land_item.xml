@@ -28,7 +28,6 @@
                 android:id="@+id/land_thumbnail_id"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:clickable="true"
                 android:scaleType="fitXY" />
 
             <TextView

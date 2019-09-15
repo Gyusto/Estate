@@ -63,7 +63,7 @@ public class LandViewAdapter extends RecyclerView.Adapter<LandViewAdapter.MyView
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    btnLand.onLandClick(land.get(getAdapterPosition()));
+                    btnLand.onLandClick(land.get(getAdapterPosition()),imageView);
                 }
             } );
 
