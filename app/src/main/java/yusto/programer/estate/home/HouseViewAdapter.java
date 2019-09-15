@@ -43,7 +43,7 @@ public class HouseViewAdapter extends RecyclerView.Adapter<HouseViewAdapter.MyVi
     public void onBindViewHolder(MyViewHolder myViewHolder, int i) {
 
        myViewHolder.Hname.setText(house.get(i).getRegion());
-      myViewHolder.Hno.setText(house.get(i).getNoOfHouses() );
+      myViewHolder.Hno.setText(house.get(i).getAmount() );
       Glide.with(context).load(house.get(i).getThumbnail()).fitCenter().into(myViewHolder.Himage);
 
     }
