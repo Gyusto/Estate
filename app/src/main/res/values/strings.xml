@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Estate</string>
+    <string name="hom_name">Home</string>
+    <string name="cars_name">Cars</string>
+    <string name="estate_nav">Estate</string>
+    <string name="house_nav">House</string>
+    <string name="profile_nav">My profile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

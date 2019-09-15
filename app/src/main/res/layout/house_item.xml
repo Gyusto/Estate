@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="170dp"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:layout_marginRight="8dp"
+    >
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:elevation="3dp"
+        app:cardCornerRadius="0dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:background="@drawable/loading_shape"
+            android:id="@+id/thumbnail_id"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/House_region_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/thumbnail_id"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="3dp"
+            android:textColor="#4c4c4c"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/House_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/House_region_id"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="3dp"
+            android:textColor="#4c4c4c"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

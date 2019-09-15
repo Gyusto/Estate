@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:id="@+id/app_menu"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="2dp"/>
+
+        <TextView
+            android:id="@+id/icon_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#F1B814"
+            android:text="Add"
+            android:textSize="12sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginBottom="2dp" />
+
+            <TextView
+                android:id="@+id/icon_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:textColor="#F1B814"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginBottom="2dp" />
+
+            <TextView
+                android:id="@+id/icon_name3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:textColor="#F1B814"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginBottom="2dp" />
+
+            <TextView
+                android:id="@+id/icon_name4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:textColor="#F1B814"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#b8b2a6"
+        />
+</LinearLayout>
